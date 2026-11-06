@@ -10,6 +10,7 @@
     font-size: 20px;
     text-decoration: none;
     color: black;
+    transition: all 100ms ease-in-out;
 }
 
 nav{
@@ -17,9 +18,35 @@ nav{
     gap: 30px;
     justify-content: center;
     padding: 30px;
+    box-shadow: 0pc 2px 12px black;
 }
 
 .nav-icon{
     width: 40px;
     height: auto;
+}
+
+.nav-item:hover{
+    opacity: 1;
+}
+
+.s1{
+    background-image: url('../assets/images/b5534d6cf762ee9c6f3137e1dff7bff7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    box-shadow: 0px 2px 12px;
+}
+
+.s2{
+    height: 100vh;
+
+}
+
+@media (width <= 1000PX){
+    nav{
+        display: none;
+    }
 }
