@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <nav>
+     <!-- <nav>
         <a class="nav-item" href="../Home">
             <img class="nav-icon" src="../assets/icons/botao-home.png" alt="">
             <p>Home</p>
@@ -24,7 +24,7 @@
             <img class="nav-icon" src="../assets/icons/botao-home.png" alt="">
             <p>Contato</p>
         </a>
-     </nav>
+     </nav> -->
 
      <div id="wrap-open" class="wrap-open" onclick="openMenu()">
         <img src="../assets/icons/menu-aberto.png" alt="menu">
@@ -37,6 +37,24 @@
         <a href="../Products">Produtos</a>
         <a href="../Contact">Contato</a>
      </div>
+
+
+     <section>
+        <div class="formulario">
+
+         <img src="../assets/icons/pngtree-whatsapp-icon-new-png-image_6315990.png" alt="whatsapp">
+         
+         <div class="wrap-inputs">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Insira seu nome">
+         </div>
+          <div class="wrap-inputs">
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" placeholder="Insira a mensagem">
+         </div>
+         <button onclick="enviar()">Enviar</button>
+        </div>
+     </section>
 
      <script src="script.js"></script>
 </body>

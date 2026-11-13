@@ -44,12 +44,76 @@ nav{
 #menu-mobile, #menu-mobile img{
     display: none;
 }
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
+.formulario{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 12px #0000047c;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.wrap-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+label{
+    font-size: 18px;
+    margin-top: 2vh;
+}
+
+input{
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+button{
+    padding: 10px;
+    margin-top: 20px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    transition: all 200ms ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+    background: black;
+    color:white;
+}
+
+.formulario img{
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -35px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 2px 12px #00000053;
+    background-color: white;
+}
 
 @media (width <= 1000px){
     nav{
         display: none;
     }
+
     .wrap-open{
         display: flex;
         align-items: center;
