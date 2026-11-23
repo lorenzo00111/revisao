@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#dceaf3"/>
+  <circle cx="400" cy="250" r="210" fill="#c6dbe8"/>
+  <path d="M280 95l55-30h130l55 30 115 75-58 88-62-41v218H285V217l-62 41-58-88z" fill="#1d73ad" stroke="#102a44" stroke-width="14"/>
+  <path d="M335 65h130l-20 62H355z" fill="#102a44"/>
+  <path d="M285 145h230v290H285z" fill="none" stroke="#79acd2" stroke-width="18"/>
+  <path d="M400 172l18 36 40 6-29 28 7 40-36-19-36 19 7-40-29-28 40-6z" fill="#fff"/>
+  <text x="400" y="352" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="68" font-weight="700">GREMIO</text>
+</svg>

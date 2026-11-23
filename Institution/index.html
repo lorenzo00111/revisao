@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituição</title>
+    <meta name="description" content="Conheça a nossa instituição, nossa missão e nossos valores.">
+    <title>Instituição | Nossa História</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,17 +27,66 @@
         </a>
      </nav>
 
-     <div id="wrap-open" class="wrap-open" onclick="openMenu()">
-        <img src="../assets/icons/menu-aberto.png" alt="menu">
+     <div id="wrap-open" class="wrap-open" onclick="openMenu()" role="button" aria-label="Abrir menu" tabindex="0">
+        <img src="../assets/icons/menu-aberto.png" alt="">
      </div>
 
-     <div id="menu-mobile">
-        <img onclick="fechar()" src="../assets/icons/marca-cruzada.png" alt="X">
+     <div id="menu-mobile" aria-hidden="true">
+        <img onclick="fechar()" src="../assets/icons/marca-cruzada.png" alt="Fechar menu" role="button" tabindex="0">
         <a href="../Home">Home</a>
         <a href="../Institution">Instituição</a>
         <a href="../Products">Produtos</a>
         <a href="../Contact">Contato</a>
      </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">Sobre nós</span>
+                <h1>Construindo soluções com propósito</h1>
+                <p>Somos uma instituição comprometida com a inovação, a qualidade e o atendimento próximo a cada pessoa.</p>
+                <a class="primary-button" href="../Products">Conheça nossos produtos</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-text">
+                <span class="eyebrow">Nossa história</span>
+                <h2>Excelência em cada detalhe</h2>
+                <p>Nascemos com o objetivo de transformar ideias em experiências relevantes. Ao longo de nossa trajetória, aprendemos que os melhores resultados acontecem quando qualidade, transparência e respeito caminham juntos.</p>
+                <p>Hoje, continuamos evoluindo para oferecer soluções modernas, confiáveis e acessíveis.</p>
+            </div>
+            <div class="stats" aria-label="Principais indicadores">
+                <article><strong>10+</strong><span>Anos de experiência</span></article>
+                <article><strong>500+</strong><span>Clientes atendidos</span></article>
+                <article><strong>98%</strong><span>Satisfação</span></article>
+            </div>
+        </section>
+
+        <section class="values">
+            <div class="section-heading">
+                <span class="eyebrow">O que nos move</span>
+                <h2>Nossos valores</h2>
+            </div>
+            <div class="value-grid">
+                <article>
+                    <span>01</span>
+                    <h3>Inovação</h3>
+                    <p>Buscamos novas ideias para entregar soluções melhores todos os dias.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Confiança</h3>
+                    <p>Atuamos com transparência, responsabilidade e respeito às pessoas.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Qualidade</h3>
+                    <p>Cuidamos de cada detalhe para garantir uma experiência consistente.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>

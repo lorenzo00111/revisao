@@ -15,6 +15,127 @@ nav{
     background-color: #ffffff;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+}
+
+.contact-section {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-div {
+    width: auto;
+    height: auto;
+}
+
+.form-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 8%;
+    background: #f8fbfc;
+}
+
+.form-header,
+.formulario {
+    width: min(100%, 480px);
+}
+
+.form-header {
+    margin-bottom: 28px;
+}
+
+.form-header img {
+    position: static;
+    width: 64px;
+    margin-bottom: 18px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transform: none;
+}
+
+.eyebrow {
+    display: block;
+    margin-bottom: 10px;
+    color: #13b6d4;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.form-header h1 {
+    margin-bottom: 12px;
+    font-size: clamp(38px, 5vw, 56px);
+}
+
+.form-header p {
+    color: #596174;
+    line-height: 1.6;
+}
+
+.formulario {
+    position: static;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.wrap-inputs {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin: 0 0 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    min-height: 54px;
+    resize: vertical;
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+    background: white;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #13b6d4;
+    box-shadow: 0 0 0 3px rgba(19, 182, 212, 0.12);
+}
+
+textarea {
+    padding: 16px 20px;
+}
+
+.error {
+    display: block;
+    min-height: 18px;
+    margin-top: 5px;
+    color: #c0392b;
+    font-size: 14px;
+}
+
+button {
+    border: 0;
+    background: #13b6d4;
+    color: white;
+}
+
+button:hover {
+    background: #0d91aa;
+}
+
 .nav-item{
     display: flex;
     align-items: center;
@@ -129,6 +250,13 @@ button:hover{
 @media (width <= 1000px){
     .img-div{
         display: none;
+    }
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+    .form-panel {
+        min-height: 100vh;
+        padding: 100px 24px 50px;
     }
     nav{
         display: none;

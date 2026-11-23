@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
+    <meta name="description" content="Conheça nossa seleção de produtos e soluções.">
+    <title>Produtos | Nosso Catálogo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,17 +27,63 @@
         </a>
      </nav>
 
-     <div id="wrap-open" class="wrap-open" onclick="openMenu()">
-        <img src="../assets/icons/menu-aberto.png" alt="menu">
+     <div id="wrap-open" class="wrap-open" onclick="openMenu()" role="button" aria-label="Abrir menu" tabindex="0">
+        <img src="../assets/icons/menu-aberto.png" alt="">
      </div>
 
-     <div id="menu-mobile">
-        <img onclick="fechar()" src="../assets/icons/marca-cruzada.png" alt="X">
+     <div id="menu-mobile" aria-hidden="true">
+        <img onclick="fechar()" src="../assets/icons/marca-cruzada.png" alt="Fechar menu" role="button" tabindex="0">
         <a href="../Home">Home</a>
         <a href="../Institution">Instituição</a>
         <a href="../Products">Produtos</a>
         <a href="../Contact">Contato</a>
      </div>
+
+    <main>
+        <section class="products-hero">
+            <span class="eyebrow">Catálogo</span>
+            <h1>Produtos pensados para você</h1>
+            <p>Conheça opções práticas, modernas e feitas para diferentes necessidades.</p>
+        </section>
+
+        <section class="catalog">
+            <article class="product-card">
+                <img src="../assets/images/camisa-gremio-1.svg" alt="Camisa oficial clássica do Grêmio">
+                <div class="product-content">
+                    <span class="tag">Mais vendido</span>
+                    <h2>Camisa Grêmio Clássica</h2>
+                    <p>Modelo tradicional com as cores azul, preto e branco do Grêmio.</p>
+                    <a href="../Contact">Solicitar orçamento</a>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="../assets/images/camisa-gremio-2.svg" alt="Camisa azul profissional do Grêmio">
+                <div class="product-content">
+                    <span class="tag">Profissional</span>
+                    <h2>Camisa Grêmio Profissional</h2>
+                    <p>Modelo azul inspirado no uniforme oficial, feito para torcer com estilo.</p>
+                    <a href="../Contact">Solicitar orçamento</a>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="../assets/images/camisa-gremio-3.svg" alt="Camisa premium do Grêmio">
+                <div class="product-content">
+                    <span class="tag">Premium</span>
+                    <h2>Camisa Grêmio Premium</h2>
+                    <p>Edição especial com acabamento moderno e detalhes exclusivos tricolores.</p>
+                    <a href="../Contact">Solicitar orçamento</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="cta">
+            <div>
+                <span class="eyebrow">Precisa de ajuda?</span>
+                <h2>Encontre a opção ideal</h2>
+            </div>
+            <a href="../Contact">Fale conosco</a>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
